@@ -491,7 +491,7 @@ class S3UploadTask {
       } else {
         await _transferDatabase.insertTransferRecord(
           TransferRecord(
-            uploadId: uploadId,
+            id: uploadId,
             objectKey: _resolvedPath,
             createdAt: DateTime.now(),
           ),
